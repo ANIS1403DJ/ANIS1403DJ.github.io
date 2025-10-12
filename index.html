@@ -7,86 +7,47 @@
   <title>Anis Djelil</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 font-sans">
 
   <!-- Navbar -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl font-bold text-blue-600">Anis Djelil</h1>
-    </div>
+  <header class="fixed w-full top-0 left-0 z-50">
+    <nav class="bg-transparent md:bg-white md:shadow-md transition-all duration-500">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="text-2xl font-bold text-blue-600">Anis Djelil</h1>
+      </div>
+    </nav>
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="bg-blue-600 text-white py-20">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Salut, je suis Anis !</h2>
-      <p class="text-lg md:text-xl mb-8">Étudiant en Master 2, spécialisé en ingénierie, modélisation et analyse numérique.</p>
-    </div>
+  <section class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white h-screen flex flex-col justify-center items-center text-center">
+    <h2 class="text-5xl md:text-6xl font-bold mb-6 animate-fadeIn">Salut, je suis Anis !</h2>
+    <p class="text-xl md:text-2xl mb-8 animate-fadeIn delay-200">
+      Étudiant Master 2, spécialisé en ingénierie, modélisation et analyse numérique.
+    </p>
   </section>
 
-  <!-- À propos -->
+  <!-- About Section -->
   <section id="about" class="py-20">
     <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">À propos de moi</h2>
-      <p class="max-w-2xl mx-auto text-gray-600">
-        Étudiant Master 2 en ingénierie, passionné par la modélisation et l'analyse numérique. Je développe mes compétences pour devenir ingénieur spécialisé dans ce domaine.
+      <h2 class="text-4xl font-bold mb-6">À propos de moi</h2>
+      <p class="max-w-2xl mx-auto text-gray-600 text-lg">
+        Étudiant Master 2 en ingénierie, passionné par la modélisation et l'analyse numérique. 
+        Je développe mes compétences pour devenir ingénieur spécialisé dans ce domaine.
       </p>
-    </div>
-  </section>
-     <!-- Projects Section -->
-<section id="projects" class="py-20 bg-gray-100">
-  <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-12">Mes projets</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-      <!-- Projet 1 -->
-      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
-        <h3 class="text-xl font-semibold mb-2">Nom du Projet 1</h3>
-        <p class="text-gray-600 mb-4">Description courte de ce projet Python.</p>
-        <a href="https://github.com/ANIS1403DJ/projet1" target="_blank" class="text-blue-600 font-semibold hover:underline">Voir le projet</a>
-      </div>
-
-      <!-- Projet 2 -->
-      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
-        <h3 class="text-xl font-semibold mb-2">Nom du Projet 2</h3>
-        <p class="text-gray-600 mb-4">Description courte de ce projet Python.</p>
-        <a href="https://github.com/ANIS1403DJ/projet2" target="_blank" class="text-blue-600 font-semibold hover:underline">Voir le projet</a>
-      </div>
-
-      <!-- Projet 3 -->
-      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
-        <h3 class="text-xl font-semibold mb-2">Nom du Projet 3</h3>
-        <p class="text-gray-600 mb-4">Description courte de ce projet Python.</p>
-        <a href="https://github.com/ANIS1403DJ/projet3" target="_blank" class="text-blue-600 font-semibold hover:underline">Voir le projet</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-  <!-- Contact -->
-  <section id="contact" class="py-20 bg-gray-100">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Contactez-moi</h2>
-      <p class="text-gray-600 mb-8">
-        Envoyez-moi un email pour toute question ou collaboration professionnelle.
-      </p>
-      <form class="max-w-xl mx-auto flex flex-col gap-4">
-        <input type="text" placeholder="Nom" class="p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
-        <input type="email" placeholder="Email" class="p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
-        <textarea placeholder="Message" rows="5" class="p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
-        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Envoyer</button>
-      </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2025 Anis Djelil. Tous droits réservés.</p>
-    </div>
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2025 Anis Djelil. Tous droits réservés.</p>
   </footer>
+
+  <!-- Animation CSS -->
+  <style>
+    @keyframes fadeIn { 0% {opacity:0;} 100% {opacity:1;} }
+    .animate-fadeIn { animation: fadeIn 1s ease forwards; }
+    .animate-fadeIn.delay-200 { animation-delay: 0.2s; }
+  </style>
 
 </body>
 </html>
