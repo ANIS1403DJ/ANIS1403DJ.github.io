@@ -1,1 +1,95 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anis Djelil - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#0b1120] text-gray-200 font-sans">
+
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 left-0 z-50 bg-[#0b1120]/90 backdrop-blur shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-blue-400">Anis Djelil</h1>
+      <nav class="space-x-4 text-gray-300">
+        <a href="#about" class="hover:text-blue-400">À propos</a>
+        <a href="#skills" class="hover:text-blue-400">Compétences</a>
+        <a href="#projects" class="hover:text-blue-400">Projets</a>
+        <a href="#contact" class="hover:text-blue-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-[#0b1120] to-[#1b2338]">
+    <h2 class="text-5xl md:text-6xl font-bold mb-4 text-white">Salut, je suis <span class="text-blue-400">Anis Djelil</span></h2>
+    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">
+      Étudiant en Master 2 Mathématiques, spécialisé en modélisation et analyse numérique à l’Université de Montpellier.
+    </p>
+    <a href="assets/CV-Anis-Djelil.pdf" target="_blank" 
+       class="bg-blue-500 hover:bg-blue-600 text-white font-bold px-8 py-3 rounded-full transition">
+       Télécharger mon CV
+    </a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-[#1b2338]">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6 text-blue-400">À propos de moi</h2>
+      <p class="max-w-3xl mx-auto text-gray-300 text-lg leading-relaxed">
+        Étudiant en Master 2 de Mathématiques, parcours Modélisation et Analyse Numérique. 
+        Passionné par les méthodes numériques et la modélisation scientifique, 
+        je développe mes compétences en programmation et en analyse mathématique pour relever des défis techniques.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-[#0b1120] text-center">
+    <h2 class="text-4xl font-bold mb-10 text-blue-400">Compétences</h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-300">
+      <div class="bg-[#1b2338] p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-2 text-blue-300">Programmation</h3>
+        <p>Python, C++, R, FreeFem++, Matlab, MySQL</p>
+      </div>
+      <div class="bg-[#1b2338] p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-2 text-blue-300">Méthodes Numériques</h3>
+        <p>Éléments finis, volumes finis, HHO, optimisation déterministe et stochastique</p>
+      </div>
+      <div class="bg-[#1b2338] p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-2 text-blue-300">Domaines</h3>
+        <p>Analyse numérique, modélisation mathématique, mécanique des fluides et des solides</p>
+      </div>
+      <div class="bg-[#1b2338] p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-2 text-blue-300">Langues</h3>
+        <p>Français (courant), Anglais (intermédiaire), Arabe (langue maternelle)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 bg-[#1b2338] text-center">
+    <h2 class="text-4xl font-bold mb-12 text-blue-400">Projets</h2>
+    <p class="text-gray-400 text-lg">Les projets seront ajoutés prochainement.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-[#0b1120] text-center">
+    <h2 class="text-4xl font-bold mb-6 text-blue-400">Contact</h2>
+    <p class="text-gray-300 mb-8 text-lg">Vous pouvez me contacter pour toute collaboration ou opportunité.</p>
+    <div class="space-y-3">
+      <p><strong>Email :</strong> <a href="mailto:djelilanis673@gmail.com" class="text-blue-300 hover:underline">djelilanis673@gmail.com</a></p>
+      <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/anis14djelil" target="_blank" class="text-blue-300 hover:underline">linkedin.com/in/anis14djelil</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#0b1120] text-gray-400 py-6 text-center border-t border-gray-700">
+    <p>&copy; 2025 Anis Djelil — Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
