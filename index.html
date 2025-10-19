@@ -180,22 +180,54 @@ function toggleFiles(id, iconId) {
   icon.classList.toggle('rotate-180');
 }
 </script>
+<!-- Séance 3_4 interactive -->
+<div class="bg-[#0b1120] p-6 rounded-xl shadow-lg hover:shadow-blue-500/30 transition text-center">
+  <button onclick="toggleFiles('seance3_4-files', 'icon-seance3_4')" 
+          class="w-full text-left text-2xl font-semibold text-blue-300 flex justify-between items-center">
+    <span>📘 Séance 3_4</span>
+    <svg id="icon-seance3_4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 transition-transform">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+
+  <p class="text-gray-300 mt-2">Cliquez pour afficher les fichiers de la séance.</p>
+
+  <!-- Liste de fichiers masquée -->
+  <div id="seance3_4-files" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out mt-4 space-y-3 text-center">
+
+    <!-- Rapport -->
+    <a href="./seance1/rapportseance3_4.pdf" target="_blank"
+       class="block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-full transition">
+       📄 Voir le rapport (PDF)
+    </a>
+
+    <!-- Section Fichiers F1 -->
+    <h4 class="text-lg font-semibold text-blue-300 mt-6">🔹 Intégrales pour F1</h4>
+    <a href="./seance1/integrallebesguesf1.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integrallebesguesf1.py</a>
+    <a href="./seance1/integralreimanf1.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integralreimanf1.py</a>
+    <a href="./seance1/integralLebesgues_cauchy.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integralLebesgues_cauchy.py</a>
+    <a href="./seance1/lebesguesnonuniforme.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger lebesguesnonuniforme.py</a>
+
+    <!-- Section Fichiers F2 -->
+    <h4 class="text-lg font-semibold text-blue-300 mt-6">🔹 Intégrales pour F2</h4>
+    <a href="./seance1/integrallebeguesF2.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integrallebeguesF2.py</a>
+    <a href="./seance1/integralreimannF2.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integralreimannF2.py</a>
+    <a href="./seance1/integrallebesguescauchyf2.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integrallebesguescauchyf2.py</a>
+    <a href="./seance1/lebesguesnonuniformef2.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger lebesguesnonuniformef2.py</a>
+
+    <!-- Autres fichiers -->
+    <h4 class="text-lg font-semibold text-blue-300 mt-6">🔹 Autres scripts</h4>
+    <a href="./seance1/adrs_multiple_mesh_adap.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger adrs_multiple_mesh_adap.py</a>
+
+    <!-- Archive ZIP -->
+    <a href="./seance1/seance3_4.zip" download
+       class="block bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 py-2 rounded-full transition mt-6">
+       📦 Télécharger tout le projet (ZIP)
+    </a>
+  </div>
+</div>
 
 
-      <!-- Séance 3_4 -->
-      <div class="bg-[#0b1120] p-6 rounded-xl shadow-lg hover:shadow-blue-500/30 hover:scale-105 transition-transform duration-300">
-        <h3 class="text-2xl font-semibold mb-3 text-blue-300">Séance 3_4</h3>
-        <p class="text-gray-300 mb-4">Contient <strong>10 fichiers</strong> (Python & PDF).</p>
-        <a href="./projets/seance3_4.zip" 
-           download 
-           aria-label="Télécharger le projet Séance 3_4"
-           class="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-full transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2m-4-4l-4 4m0 0l-4-4m4 4V4" />
-          </svg>
-          Télécharger le projet
-        </a>
-      </div>
 
       <!-- Séance 4_5 -->
       <div class="bg-[#0b1120] p-6 rounded-xl shadow-lg hover:shadow-blue-500/30 hover:scale-105 transition-transform duration-300">
