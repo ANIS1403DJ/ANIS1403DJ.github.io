@@ -192,40 +192,58 @@ function toggleFiles(id, iconId) {
 
   <p class="text-gray-300 mt-2">Cliquez pour afficher les fichiers de la séance.</p>
 
-  <!-- Liste de fichiers masquée -->
-  <div id="seance3_4-files" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out mt-4 space-y-3 text-center">
+  <!-- Liste de fichiers masquée et scrollable -->
+  <div id="seance3_4-files" class="max-h-0 overflow-y-auto transition-all duration-500 ease-in-out mt-4 space-y-3 text-center">
 
     <!-- Rapport -->
-    <a href="./seance1/rapportseance3_4.pdf" target="_blank"
+    <a href="./seance3_4/rapportseance3_4.pdf" target="_blank"
        class="block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-full transition">
        📄 Voir le rapport (PDF)
     </a>
 
     <!-- Section Fichiers F1 -->
     <h4 class="text-lg font-semibold text-blue-300 mt-6">🔹 Intégrales pour F1</h4>
-    <a href="./seance1/integrallebesguesf1.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integrallebesguesf1.py</a>
-    <a href="./seance1/integralreimanf1.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integralreimanf1.py</a>
-    <a href="./seance1/integralLebesgues_cauchy.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integralLebesgues_cauchy.py</a>
-    <a href="./seance1/lebesguesnonuniforme.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger lebesguesnonuniforme.py</a>
+    <a href="./seance3_4/integrallebesguesf1.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integrallebesguesf1.py</a>
+    <a href="./seance3_4/integralreimanf1.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integralreimanf1.py</a>
+    <a href="./seance3_4/integralLebesgues_cauchy.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integralLebesgues_cauchy.py</a>
+    <a href="./seance3_4/lebesguesnonuniforme.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger lebesguesnonuniforme.py</a>
 
     <!-- Section Fichiers F2 -->
     <h4 class="text-lg font-semibold text-blue-300 mt-6">🔹 Intégrales pour F2</h4>
-    <a href="./seance1/integrallebeguesF2.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integrallebeguesF2.py</a>
-    <a href="./seance1/integralreimannF2.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integralreimannF2.py</a>
-    <a href="./seance1/integrallebesguescauchyf2.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integrallebesguescauchyf2.py</a>
-    <a href="./seance1/lebesguesnonuniformef2.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger lebesguesnonuniformef2.py</a>
+    <a href="./seance3_4/integrallebeguesF2.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integrallebeguesF2.py</a>
+    <a href="./seance3_4/integralreimannF2.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integralreimannF2.py</a>
+    <a href="./seance3_4/integrallebesguescauchyf2.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger integrallebesguescauchyf2.py</a>
+    <a href="./seance3_4/lebesguesnonuniformef2.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger lebesguesnonuniformef2.py</a>
 
     <!-- Autres fichiers -->
     <h4 class="text-lg font-semibold text-blue-300 mt-6">🔹 Autres scripts</h4>
-    <a href="./seance1/adrs_multiple_mesh_adap.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger adrs_multiple_mesh_adap.py</a>
+    <a href="./seance3_4/adrs_multiple_mesh_adap.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">💻 Télécharger adrs_multiple_mesh_adap.py</a>
 
     <!-- Archive ZIP -->
-    <a href="./seance1/seance3_4.zip" download
+    <a href="./seance3_4/seance3_4.zip" download
        class="block bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 py-2 rounded-full transition mt-6">
        📦 Télécharger tout le projet (ZIP)
     </a>
   </div>
 </div>
+
+<!-- Script pour bascule -->
+<script>
+function toggleFiles(id, iconId) {
+  const filesDiv = document.getElementById(id);
+  const icon = document.getElementById(iconId);
+  if (filesDiv.classList.contains('max-h-0')) {
+    filesDiv.classList.remove('max-h-0');
+    filesDiv.classList.add('max-h-[1000px]'); // assez grand pour tous les fichiers
+    icon.classList.add('rotate-180');
+  } else {
+    filesDiv.classList.add('max-h-0');
+    filesDiv.classList.remove('max-h-[1000px]');
+    icon.classList.remove('rotate-180');
+  }
+}
+</script>
+
 
 
 
