@@ -80,16 +80,20 @@
     <h2 class="text-4xl font-bold mb-12 text-blue-400">Projets</h2>
     
     <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-<!-- Séance 1 combinée -->
+<!-- Séance 1 interactive -->
 <div class="bg-[#0b1120] p-6 rounded-xl shadow-lg hover:shadow-blue-500/30 transition text-center">
-  <h3 class="text-2xl font-semibold mb-3 text-blue-300">Séance 1</h3>
-  <p class="text-gray-300 mb-6">
-    Projet comprenant un rapport et trois scripts Python.<br>
-    Vous pouvez consulter les fichiers individuellement ou télécharger tout le projet.
-  </p>
+  <button onclick="toggleFiles('seance1-files')" 
+          class="w-full text-left text-2xl font-semibold text-blue-300 flex justify-between items-center">
+    <span>📘 Séance 1</span>
+    <svg id="icon-seance1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 transition-transform">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
 
-  <!-- Fichiers individuels -->
-  <div class="space-y-3 mb-6">
+  <p class="text-gray-300 mt-2">Cliquez pour afficher les fichiers de la séance.</p>
+
+  <!-- Liste de fichiers masquée au départ -->
+  <div id="seance1-files" class="hidden mt-6 space-y-3 text-center">
     <a href="./seance1/rapportseance1.pdf" target="_blank"
        class="block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-full transition">
        📄 Voir le rapport (PDF)
@@ -106,14 +110,24 @@
        class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">
        💻 Télécharger seance1PART3.py
     </a>
+    <a href="./seance1/seance1.zip" download
+       class="block bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 py-2 rounded-full transition">
+       📦 Télécharger tout le projet (ZIP)
+    </a>
   </div>
-
-  <!-- Option ZIP -->
-  <a href="./seance1/seance1.zip" download
-     class="inline-block bg-purple-500 hover:bg-purple-600 text-white font-semibold px-8 py-3 rounded-full transition">
-     📦 Télécharger tout le projet (ZIP)
-  </a>
 </div>
+
+<!-- Script pour gérer l'ouverture/fermeture -->
+<script>
+function toggleFiles(id) {
+  const filesDiv = document.getElementById(id);
+  const icon = document.getElementById('icon-seance1');
+
+  filesDiv.classList.toggle('hidden');
+  icon.classList.toggle('rotate-180'); // rotation de la flèche
+}
+</script>
+
 
 
 
