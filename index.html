@@ -160,6 +160,31 @@
 
   </div>
 </section>
+  <!-- Séance 6 interactive -->
+<div class="bg-[#0b1120] p-6 rounded-xl shadow-lg hover:shadow-blue-500/30 transition text-center">
+  <button onclick="toggleFiles('seance6-files','icon-seance6')" 
+          class="w-full text-left text-2xl font-semibold text-blue-300 flex justify-between items-center">
+    <span>📘 Séance 6</span>
+    <svg id="icon-seance6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 transition-transform">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+
+  <p class="text-gray-300 mt-2">Cliquez pour afficher les fichiers de la séance.</p>
+
+  <!-- Liste des fichiers masquée au départ -->
+  <div id="seance6-files" class="max-h-0 overflow-y-auto transition-all duration-500 ease-in-out mt-4 space-y-3 text-center">
+    <a href="./seance1/rapportseance6.pdf" target="_blank" class="block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-full transition">
+      📄 Voir le rapport (PDF)
+    </a>
+    <a href="./seance1/adrs_optimal.py" download class="block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition">
+      💻 Télécharger adrs_optimal.py
+    </a>
+    <a href="./seance1/seance6.zip" download class="block bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 py-2 rounded-full transition">
+      📦 Télécharger tout le projet (ZIP)
+    </a>
+  </div>
+</div>
 
 <!-- Script pour gérer l'ouverture/fermeture -->
 <script>
@@ -178,6 +203,7 @@ function toggleFiles(id, iconId) {
   }
 }
 </script>
+
 
   
   <!-- Contact -->
